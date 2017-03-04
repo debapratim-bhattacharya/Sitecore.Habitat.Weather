@@ -20,7 +20,7 @@ namespace Sitecore.Foundation.Weather.Controllers
         public string GetWeatherByCity(string city)
         {
 
-            url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&APPID={1}&units={2}", city, appId, "metric");
+            url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&APPID={1}&units={2}", city, appId, "celsius");
             return GetCurrentWeatherJson(url);
         }
 
@@ -28,22 +28,21 @@ namespace Sitecore.Foundation.Weather.Controllers
         [System.Web.Http.HttpGet]
         public string GetWeatherByGeolocation(string latitude, string longitude)
         {
-            url = string.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid={2}&units={3}", latitude, longitude, appId, "metric");
+            url = string.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid={2}&units={3}", latitude, longitude, appId, "celsius");
             return GetCurrentWeatherJson(url);
         }
 
         [System.Web.Http.HttpGet]
         public string GetWeatherForecastByGeolocation(string latitude, string longitude)
         {
-            url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?lat={0}&lon={1}&appid={2}&units={3}", latitude, longitude, appId, "metric");
-
+            url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?lat={0}&lon={1}&appid={2}&units={3}", latitude, longitude, appId, "celsius");
             return GetForecastWeatherJson(url);
         }
 
         [System.Web.Http.HttpGet]
         public string GetWeatherForecastByCity(string city)
         {
-            url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&cnt={1}&APPID={2}&units={3}", city, 5, appId, "metric");
+            url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&cnt={1}&APPID={2}&units={3}", city, 5, appId, "celsius");
             return GetForecastWeatherJson(url);
         }
 
