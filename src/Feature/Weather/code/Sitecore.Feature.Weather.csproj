@@ -137,6 +137,9 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Personalization\Rules\WeatherDescriptionCondition.cs" />
+    <Compile Include="Personalization\Rules\WeatherForecastCondition.cs" />
+    <Compile Include="Personalization\Rules\WeatherTemperatureCondition.cs" />
     <Compile Include="Controllers\WeatherWidgetController.cs" />
     <Compile Include="Models\CarouselRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

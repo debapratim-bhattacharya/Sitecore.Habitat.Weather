@@ -1,19 +1,16 @@
 ﻿---
-ID: "a65708c5-da89-4db1-9119-903449224292"
-Parent: "9a74da96-0c5d-4684-8fa4-451d357fc122"
+ID: "6a670f40-4508-4615-8659-d98ac5ca41a6"
+Parent: "a330a8cf-1973-493f-b780-551059c68405"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Weather/WeatherApiConfig/Api Details/TemperatureUnit
+Path: /sitecore/templates/Feature/Weather/DropList/Content/Value
 DB: master
 SharedFields:
-- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
-  Hint: Source
-  Value: /sitecore/content/Habitat/Global/Weather/Temperature Units
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Droptree
+  Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 500
+  Value: 300
 Languages:
 - Language: en
   Versions:
@@ -21,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170304T061857Z
+      Value: 20170304T104048Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
