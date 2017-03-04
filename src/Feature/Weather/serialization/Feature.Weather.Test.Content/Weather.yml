@@ -18,48 +18,10 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{5F00459F-F106-4A93-B503-F71AE94597EF}"
+              uid="{2B1600B7-8CA1-4894-91B5-4D81C272AD71}"
               p:before="*"
-              s:ds="{BAA538A3-9DE8-4D89-B2EA-7F30B7D6410D}"
-              s:id="{A1AD34DD-535E-47AF-A911-34C57CCC26F6}"
-              s:ph="/page-layout/section-narrow/col-narrow-1_ca8bb15c-a84d-4cfb-b004-b72664b4354b">
-              <rls>
-                <ruleset>
-                  <rule
-                    uid="{D42ACD1F-EC18-44DB-923A-A570613664F0}"
-                    s:name="Specify name...">
-                    <conditions>
-                      <condition
-                        uid="A1AA5A99784B44B2B94DFB9F93028054"
-                        s:id="{331C6356-630C-4F5B-AF4B-7B21DBDAA3D7}"
-                        s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}"
-                        s:value="{21B22006-F1C3-42A3-8BF2-A64F94D68D83}" />
-                    </conditions>
-                    <actions>
-                      <action
-                        uid="2C00D09682304CF59D516FFAFB72A8D1"
-                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{779041C8-F089-4E63-A054-D718F42EE16D}" />
-                    </actions>
-                  </rule>
-                  <rule
-                    uid="{00000000-0000-0000-0000-000000000000}"
-                    s:name="Default">
-                    <conditions>
-                      <condition
-                        uid="E8E3610CC94C4F27ABA22DC67F16E1D8"
-                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                    </conditions>
-                    <actions />
-                  </rule>
-                </ruleset>
-              </rls>
-            </r>
-            <r
-              uid="{CA8BB15C-A84D-4CFB-B004-B72664B4354B}"
-              p:after="r[@uid='{5F00459F-F106-4A93-B503-F71AE94597EF}']"
-              s:id="{45CE489D-FA30-473E-9751-142BD06CCB33}"
-              s:ph="/page-layout/section-narrow" />
+              s:id="{A4B61D61-3654-43FB-B022-F4A95D71315E}"
+              s:ph="/page-layout/section-narrow/col-narrow-1_25acda55-5eb7-4be4-bee1-44e4de7d1114" />
           </d>
         </r>
     - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"

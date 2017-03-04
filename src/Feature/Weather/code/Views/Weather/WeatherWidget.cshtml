@@ -1,1 +1,22 @@
 ﻿
+@using Sitecore.Foundation.Weather
+@using Sitecore.Mvc
+
+@model Sitecore.Foundation.Weather.Models.WeatherInfo
+
+<div class="carousel">
+    @foreach (var carouselSlide in Model.list)
+    {
+        <div class="carousel-slide">
+            <div class="carousel-slide-content">
+                <h1>@Model.city</h1>
+                <h2>@carouselSlide.humidity</h2>
+                <h3>@carouselSlide.temp.min - @carouselSlide.temp.max</h3>
+                <h3>@carouselSlide.temp.day - @carouselSlide.temp.night</h3>
+                
+            </div>
+           
+            <div class="clearfix"></div>
+        </div>
+    }
+</div>
