@@ -80,4 +80,4 @@ namespace Sitecore.Feature.Weather.Repositories
         }
     }
 }
-}
+
