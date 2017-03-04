@@ -1,0 +1,51 @@
+﻿---
+ID: "fa6cebaf-0236-457d-9c26-bb9a9c9003c9"
+Parent: "f732cca1-22e4-44bb-a1fc-1db9daa7f8e5"
+Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Weather/Subscribe
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4ABFE1F7-F6EF-490C-B840-453190642D6D}"
+              p:before="*"
+              s:ds="{519C150F-A783-4576-997B-0534A958693E}"
+              s:id="{F2CCA16D-7524-4E99-8EE0-78FF6394A3B3}"
+              s:ph="/page-layout/section-narrow/col-wide-1_c6efb271-816f-469c-a37c-aa31ba1ef4f8" />
+            <r
+              uid="{C6EFB271-816F-469C-A37C-AA31BA1EF4F8}"
+              p:after="r[@uid='{4ABFE1F7-F6EF-490C-B840-453190642D6D}']"
+              s:id="{03112E88-1499-4132-9D5F-E213AFD2019C}"
+              s:ph="/page-layout/section-narrow" />
+          </d>
+        </r>
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Subscribe
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T131219Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: <p>Please subscribe to this form to allow us to send you the amazing offers we have on our products based on the current weather conditions.</p>
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Subscribe
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Subscribe
