@@ -137,14 +137,19 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\WeatherRequestModel.cs" />
     <Compile Include="Personalization\Rules\WeatherDescriptionCondition.cs" />
     <Compile Include="Personalization\Rules\WeatherForecastCondition.cs" />
     <Compile Include="Personalization\Rules\WeatherTemperatureCondition.cs" />
     <Compile Include="Controllers\WeatherWidgetController.cs" />
     <Compile Include="Models\CarouselRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IWeatherRepository.cs" />
+    <Compile Include="Repositories\WeatherRepository.cs" />
     <Compile Include="Scheduler\Agent\WeatherBasedNotifier.cs" />
     <Compile Include="Scheduler\Agent\WeatherForecast.cs" />
+    <Compile Include="Scheduler\IWeatherBasedTask.cs" />
+    <Compile Include="Scheduler\Job\ProductOffer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />

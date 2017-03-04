@@ -1,23 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Sitecore.Data;
-using Sitecore.Data.Fields;
-using Sitecore.Data.Items;
+﻿using System.Collections.Generic;
 using Sitecore.Foundation.Weather.Models;
-using Sitecore.Mvc.Presentation;
 using System.Web.Script.Serialization;
-using System.Net.Http;
 using System.Net;
 using Sitecore.Feature.Weather.Models;
 
 namespace Sitecore.Feature.Weather.Repositories
 {
     public class WeatherRepository : IWeatherRepository
-    {
-        static HttpClient httpClient = new HttpClient();       
-        
+    { 
         public string URL = string.Empty;
 
         public static string json = string.Empty;
@@ -29,9 +19,10 @@ namespace Sitecore.Feature.Weather.Repositories
             {
                 json = client.DownloadString(url);
             }
-            WeatherCurrent WeatherCurrent = (new JavaScriptSerializer()).Deserialize<WeatherCurrent>(json);
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            json = js.Serialize(WeatherCurrent);
+
+            var weatherCurrent = (new JavaScriptSerializer()).Deserialize<WeatherCurrent>(json);
+            var js = new JavaScriptSerializer();
+            json = js.Serialize(weatherCurrent);
             return json;
         }
         public string GetForecastWeatherJson(string url)
@@ -40,9 +31,9 @@ namespace Sitecore.Feature.Weather.Repositories
             {
                 json = client.DownloadString(url);
             }
-            WeatherInfo WeatherForecast = (new JavaScriptSerializer()).Deserialize<WeatherInfo>(json);
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            json = js.Serialize(WeatherForecast);
+            var weatherForecast = (new JavaScriptSerializer()).Deserialize<WeatherInfo>(json);
+            var js = new JavaScriptSerializer();
+            json = js.Serialize(weatherForecast);
             return json;
         }
 
@@ -55,9 +46,9 @@ namespace Sitecore.Feature.Weather.Repositories
                 {"{{appid}}",request.AppId },
                 {"{{metric}}",request.Unit }
             };
-            foreach (string to_replace in replacements.Keys)
+            foreach (string toReplace in replacements.Keys)
             {
-                URL = URL.Replace(to_replace, replacements[to_replace]);
+                URL = URL.Replace(toReplace, replacements[toReplace]);
             }
             return GetCurrentWeatherJson(URL);
         }
@@ -72,12 +63,12 @@ namespace Sitecore.Feature.Weather.Repositories
                 {"{{appid}}",request.AppId },
                 {"{{metric}}",request.Unit }
             };
-            foreach (string to_replace in replacements.Keys)
+            foreach (string toReplace in replacements.Keys)
             {
-                URL = URL.Replace(to_replace, replacements[to_replace]);
+                URL = URL.Replace(toReplace, replacements[toReplace]);
             }
             return GetCurrentWeatherJson(URL);
         }
     }
-}
+
 }
