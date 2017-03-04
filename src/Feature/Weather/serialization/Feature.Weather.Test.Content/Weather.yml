@@ -18,8 +18,18 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{2B1600B7-8CA1-4894-91B5-4D81C272AD71}"
+              uid="{1D492A29-F81A-4F2F-88A4-2568F921533F}"
               p:before="*"
+              s:id="{A4B61D61-3654-43FB-B022-F4A95D71315E}"
+              s:ph="/page-layout/section-narrow/col-narrow-1_5638bb2e-df62-4f58-9750-12c3e6dfa318" />
+            <r
+              uid="{5638BB2E-DF62-4F58-9750-12C3E6DFA318}"
+              p:after="r[@uid='{1D492A29-F81A-4F2F-88A4-2568F921533F}']"
+              s:id="{45CE489D-FA30-473E-9751-142BD06CCB33}"
+              s:ph="/page-layout/section-narrow" />
+            <r
+              uid="{2B1600B7-8CA1-4894-91B5-4D81C272AD71}"
+              p:after="r[@uid='{5638BB2E-DF62-4F58-9750-12C3E6DFA318}']"
               s:id="{A4B61D61-3654-43FB-B022-F4A95D71315E}"
               s:ph="/page-layout/section-narrow/col-narrow-1_25acda55-5eb7-4be4-bee1-44e4de7d1114" />
           </d>
