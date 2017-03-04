@@ -1,0 +1,14 @@
+﻿---
+ID: "323df41c-c806-4387-8731-19f8d336dd74"
+Parent: "dd46e0f3-3e80-4f96-832e-8922573ed3e9"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Feature/Weather/Weather APIs
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T062208Z

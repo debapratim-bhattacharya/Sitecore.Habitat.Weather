@@ -1,0 +1,21 @@
+﻿---
+ID: "5cf4d30b-1454-4f27-a7f9-c181ffaab452"
+Parent: "56962f09-9cda-4aad-ab5c-dff625a5037d"
+Template: "56962f09-9cda-4aad-ab5c-dff625a5037d"
+Path: /sitecore/templates/Feature/Weather/WeatherApiConfig/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ae08801-9b41-48ea-a855-179fb8063067"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T062035Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

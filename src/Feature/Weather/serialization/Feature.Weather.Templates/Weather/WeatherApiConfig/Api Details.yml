@@ -1,0 +1,14 @@
+﻿---
+ID: "9a74da96-0c5d-4684-8fa4-451d357fc122"
+Parent: "56962f09-9cda-4aad-ab5c-dff625a5037d"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Weather/WeatherApiConfig/Api Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T061856Z

@@ -1,0 +1,17 @@
+﻿---
+ID: "a0dbde20-5088-4cd2-a823-659075c6b8ee"
+Parent: "323df41c-c806-4387-8731-19f8d336dd74"
+Template: "56962f09-9cda-4aad-ab5c-dff625a5037d"
+Path: /sitecore/system/Settings/Feature/Weather/Weather APIs/OpenWeatherMap
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ae08801-9b41-48ea-a855-179fb8063067"
+      Hint: Name
+      Value: OpenWeatherMap
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T062343Z
