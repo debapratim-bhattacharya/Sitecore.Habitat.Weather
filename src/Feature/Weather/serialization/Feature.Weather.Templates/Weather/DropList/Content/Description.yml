@@ -1,8 +1,8 @@
 ﻿---
-ID: "bd74938e-1257-473c-9515-e4af64039a95"
-Parent: "9a74da96-0c5d-4684-8fa4-451d357fc122"
+ID: "29ced1aa-d21f-42eb-b8e4-ffdd2e585397"
+Parent: "a330a8cf-1973-493f-b780-551059c68405"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Weather/WeatherApiConfig/Api Details/AppBaseUrl
+Path: /sitecore/templates/Feature/Weather/DropList/Content/Description
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170304T061857Z
+      Value: 20170304T104046Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -1,0 +1,21 @@
+﻿---
+ID: "0e3909eb-4202-45f0-b31a-20ace57ef24a"
+Parent: "61db0c7a-349d-4c38-9810-51702b427162"
+Template: "61db0c7a-349d-4c38-9810-51702b427162"
+Path: /sitecore/templates/Feature/Weather/DropList/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T104132Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6d225105-3069-43ed-9c88-c992428f5048"
+      Hint: Name
+      Value: $name
