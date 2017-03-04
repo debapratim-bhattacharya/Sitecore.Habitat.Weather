@@ -1,0 +1,19 @@
+﻿---
+ID: "09992c01-ca5a-449f-9dbe-76ba8f8fe6b0"
+Parent: "76e6d8c7-1f93-4712-872b-da3c96b808f2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Field types/Weather
+DB: core
+BranchID: "30235f43-6242-4107-87ab-5267e34edf0c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T035338Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

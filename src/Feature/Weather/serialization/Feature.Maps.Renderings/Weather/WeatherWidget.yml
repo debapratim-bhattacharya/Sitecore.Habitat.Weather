@@ -1,0 +1,25 @@
+﻿---
+ID: "a4b61d61-3654-43fb-b022-f4a95d71315e"
+Parent: "048e26a3-72d0-45ad-956c-579d62d370f8"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Weather/WeatherWidget
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Weather/WeatherWidget.cshtml
+- ID: "ef7c5528-7307-4e19-863b-da19eed6a9ed"
+  Hint: Open Properties after Add
+  Value: "-"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T035913Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

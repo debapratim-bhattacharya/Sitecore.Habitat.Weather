@@ -125,7 +125,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.Weather.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Weather.Serialization.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Views\Weather\WeatherWidget.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
