@@ -127,12 +127,15 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Weather.config" />
     <Content Include="App_Config\Include\Feature\Feature.Weather.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Weather.Task.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\Weather\WeatherWidget.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scheduler\Agent\WeatherBasedNotifier.cs" />
+    <Compile Include="Scheduler\Agent\WeatherForecast.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
