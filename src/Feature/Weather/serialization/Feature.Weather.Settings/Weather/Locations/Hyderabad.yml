@@ -1,0 +1,20 @@
+﻿---
+ID: "b26f6276-1f61-4ece-b327-0b2cea91324d"
+Parent: "e0633b02-1077-486f-88e9-a3ee46d0aa72"
+Template: "86cbbe39-1ac3-4719-9c31-bcf99117864e"
+Path: /sitecore/system/Settings/Feature/Weather/Locations/Hyderabad
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T154259Z
+    - ID: "6df006e7-9d2d-4eb1-b817-e2cb790d8244"
+      Hint: City
+      Value: Hyderabad
+    - ID: "c7a146a7-db58-4a82-8462-13a5d8ba2e4a"
+      Hint: Country
+      Value: India
