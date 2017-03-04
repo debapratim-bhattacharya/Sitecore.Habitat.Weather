@@ -22,4 +22,4 @@ Languages:
         sitecore\Admin
     - ID: "af321234-4eb9-4ef5-9197-65903351939c"
       Hint: Text
-      Value: "where the temperature [operatorid,StringOperator,,compares to] [value,,,specific value]"
+      Value: "where the temperature [operatorid,Operator,,compares to] [value,Integer,,specific value]"
