@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{6F81D5A7-DD8E-40CF-A696-7E14B6309CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group", "Group", "{9D180712-0180-4814-95C8-C9A0732EC28D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.Group", "src\Project\Group\code\Sitecore.Demo.Group.csproj", "{4A74623C-08D4-4984-A7A5-E482AF0B0630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{0A2EC991-43AF-4CB5-88D6-37ADD014CC19}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+		publishsettings.targets = publishsettings.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{5594F6A0-FEE7-456C-8C2E-7CC1DD6C4969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather", "Weather", "{4475E2BA-6755-4332-B2A9-03F071127C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Weather", "code\Sitecore.Feature.Weather.csproj", "{DD5C6FEE-7310-4B0B-8C84-56BE85301E30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{0D78044F-E8AE-48A4-875F-478F0CC1A8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Weather", "src\Foundation\code\Sitecore.Foundation.Weather.csproj", "{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Weather.Tests", "src\Foundation\test\Sitecore.Foundation.Weather.Tests.csproj", "{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A74623C-08D4-4984-A7A5-E482AF0B0630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A74623C-08D4-4984-A7A5-E482AF0B0630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A74623C-08D4-4984-A7A5-E482AF0B0630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A74623C-08D4-4984-A7A5-E482AF0B0630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5C6FEE-7310-4B0B-8C84-56BE85301E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5C6FEE-7310-4B0B-8C84-56BE85301E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5C6FEE-7310-4B0B-8C84-56BE85301E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5C6FEE-7310-4B0B-8C84-56BE85301E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D180712-0180-4814-95C8-C9A0732EC28D} = {6F81D5A7-DD8E-40CF-A696-7E14B6309CD0}
+		{4A74623C-08D4-4984-A7A5-E482AF0B0630} = {9D180712-0180-4814-95C8-C9A0732EC28D}
+		{4475E2BA-6755-4332-B2A9-03F071127C64} = {5594F6A0-FEE7-456C-8C2E-7CC1DD6C4969}
+		{DD5C6FEE-7310-4B0B-8C84-56BE85301E30} = {4475E2BA-6755-4332-B2A9-03F071127C64}
+		{8C8ACB27-FD88-41F9-9C0B-7ABBF3CF5657} = {0D78044F-E8AE-48A4-875F-478F0CC1A8DD}
+		{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49} = {0D78044F-E8AE-48A4-875F-478F0CC1A8DD}
+	EndGlobalSection
+EndGlobal
