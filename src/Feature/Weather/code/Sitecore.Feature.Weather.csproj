@@ -133,6 +133,9 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Personalization\Rules\WeatherDescriptionCondition.cs" />
+    <Compile Include="Personalization\Rules\WeatherForecastCondition.cs" />
+    <Compile Include="Personalization\Rules\WeatherTemperatureCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scheduler\Agent\WeatherBasedNotifier.cs" />
     <Compile Include="Scheduler\Agent\WeatherForecast.cs" />

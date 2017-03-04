@@ -1,0 +1,17 @@
+﻿---
+ID: "697d9b94-fc63-4338-849e-2abfb137cc76"
+Parent: "0c004b62-2296-4656-a2c6-7242e8550a76"
+Template: "0b2e50a5-cde5-4953-952f-5cec3c30f023"
+Path: /sitecore/system/Settings/Feature/Weather/Weather profiles/Moderate rain
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "00d9c713-c022-45c8-9a50-5b1fa1a31714"
+      Hint: Description
+      Value: Moderate rain
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T094817Z

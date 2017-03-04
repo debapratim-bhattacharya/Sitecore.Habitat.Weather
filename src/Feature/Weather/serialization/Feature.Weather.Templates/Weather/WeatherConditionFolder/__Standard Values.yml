@@ -1,0 +1,19 @@
+﻿---
+ID: "c502b3d1-ab4c-4960-b158-d0bfd68e0783"
+Parent: "9ee9d852-eb91-4370-b663-75d090e79491"
+Template: "9ee9d852-eb91-4370-b663-75d090e79491"
+Path: /sitecore/templates/Feature/Weather/WeatherConditionFolder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{0B2E50A5-CDE5-4953-952F-5CEC3C30F023}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T094604Z
