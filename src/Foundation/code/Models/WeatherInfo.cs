@@ -8,7 +8,7 @@ namespace Sitecore.Foundation.Weather.Models
     public class WeatherInfo
     {
         public City city { get; set; }
-        public List<List> list { get; set; }
+        public List<Climate> list { get; set; }
     }
 
     public class City
@@ -31,7 +31,7 @@ namespace Sitecore.Foundation.Weather.Models
         public string icon { get; set; }
     }
 
-    public class List
+    public class Climate
     {
         public Temp temp { get; set; }
         public int humidity { get; set; }

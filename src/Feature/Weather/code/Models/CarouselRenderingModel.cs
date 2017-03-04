@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Sitecore.Feature.Weather.Models
 {
-    public class CarouselRenderingModel : RenderingModel
+    public class CarouselRenderingModel : Sitecore.Mvc.Presentation.RenderingModel
     {
         public override void Initialize(Rendering rendering)
         {
