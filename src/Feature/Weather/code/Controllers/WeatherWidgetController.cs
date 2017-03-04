@@ -21,7 +21,7 @@ namespace Sitecore.Feature.Weather.Controllers
             return ID.IsID(datasourceId) ? Context.Database.GetItem(datasourceId) : null;
         }
 
-        public async Task<ActionResult> CityWeatherList()
+        public ActionResult CityWeatherList()
         {
             var currentItem = GetDatasourceItem();
             var weatherInfo = new WeatherInfo() ;
@@ -30,11 +30,11 @@ namespace Sitecore.Feature.Weather.Controllers
             //var targetItem = apiSource.TargetItem;
             //var uri = targetItem.Fields["AppID"].Value;
 
-            HttpResponseMessage response = await httpClient.GetAsync(apiSource.TargetItem.Uri.Path);
+            HttpResponseMessage response = httpClient.GetAsync(apiSource.TargetItem.Uri.Path).Result;
 
             if (response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadAsStringAsync();
+                var data = response.Content.ReadAsStringAsync().Result;
                 weatherInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherInfo>(data);                 
             };
 
