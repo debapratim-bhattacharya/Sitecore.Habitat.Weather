@@ -148,6 +148,8 @@
     <Compile Include="Repositories\WeatherRepository.cs" />
     <Compile Include="Scheduler\Agent\WeatherBasedNotifier.cs" />
     <Compile Include="Scheduler\Agent\WeatherForecast.cs" />
+    <Compile Include="Scheduler\IWeatherBasedTask.cs" />
+    <Compile Include="Scheduler\Job\ProductOffer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
