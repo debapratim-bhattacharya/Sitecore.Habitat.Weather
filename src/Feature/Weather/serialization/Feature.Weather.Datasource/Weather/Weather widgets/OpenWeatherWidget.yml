@@ -1,0 +1,21 @@
+﻿---
+ID: "83595910-a6ef-41a7-a37d-cfd369a2c293"
+Parent: "627d0443-44e0-40eb-adb6-6bb17cbf869d"
+Template: "dc9101a0-af34-45f0-90e7-34c4d520473a"
+Path: /sitecore/content/Habitat/Global/Weather/Weather widgets/OpenWeatherWidget
+DB: master
+SharedFields:
+- ID: "2acb3960-96cb-4d4f-96fb-a885795d1912"
+  Hint: ApiSource
+  Value: "{A0DBDE20-5088-4CD2-A823-659075C6B8EE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T103738Z
+    - ID: "f7e202f3-90aa-49ac-af74-52a713786fc9"
+      Hint: MaxSliderCount
+      Value: 5

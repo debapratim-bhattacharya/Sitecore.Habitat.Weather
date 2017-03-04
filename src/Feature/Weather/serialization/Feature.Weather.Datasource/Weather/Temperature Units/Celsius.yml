@@ -1,0 +1,20 @@
+﻿---
+ID: "e461ff71-0503-4c8d-aef2-c4cef25e2bbe"
+Parent: "46b6ebca-4c8d-4bf9-a379-db9456cb042a"
+Template: "61db0c7a-349d-4c38-9810-51702b427162"
+Path: /sitecore/content/Habitat/Global/Weather/Temperature Units/Celsius
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T104258Z
+    - ID: "6a670f40-4508-4615-8659-d98ac5ca41a6"
+      Hint: Value
+      Value: C
+    - ID: "6d225105-3069-43ed-9c88-c992428f5048"
+      Hint: Name
+      Value: Celsius
