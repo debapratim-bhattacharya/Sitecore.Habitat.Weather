@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Weather
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Weather.Tests", "src\Foundation\test\Sitecore.Foundation.Weather.Tests.csproj", "{C360A7B7-9938-4DE2-BC3C-5B3ACCCF4C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Weather", "src\Feature\Weather\Sitecore.Feature.Weather\Sitecore.Feature.Weather.csproj", "{C762C9F7-6001-4272-82C2-02AC89E429B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Weather", "src\Feature\Weather\code\Sitecore.Feature.Weather.csproj", "{C762C9F7-6001-4272-82C2-02AC89E429B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
