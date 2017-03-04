@@ -1,0 +1,17 @@
+﻿---
+ID: "7592c66b-a329-4f7d-b904-783af0315e13"
+Parent: "46b6ebca-4c8d-4bf9-a379-db9456cb042a"
+Template: "61db0c7a-349d-4c38-9810-51702b427162"
+Path: /sitecore/content/Habitat/Global/Weather/Temperature Units/Metrics
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T104309Z
+    - ID: "6d225105-3069-43ed-9c88-c992428f5048"
+      Hint: Name
+      Value: Metrics

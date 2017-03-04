@@ -1,7 +1,7 @@
 ﻿---
 ID: "a4b61d61-3654-43fb-b022-f4a95d71315e"
 Parent: "048e26a3-72d0-45ad-956c-579d62d370f8"
-Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
 Path: /sitecore/layout/Renderings/Feature/Weather/WeatherWidget
 DB: master
 SharedFields:
@@ -16,7 +16,7 @@ SharedFields:
   Value: WeatherWidget
 - ID: "ef7c5528-7307-4e19-863b-da19eed6a9ed"
   Hint: Open Properties after Add
-  Value: 
+  Value: "-"
 Languages:
 - Language: en
   Versions:

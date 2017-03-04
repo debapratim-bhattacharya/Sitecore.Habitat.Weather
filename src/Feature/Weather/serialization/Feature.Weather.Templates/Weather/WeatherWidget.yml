@@ -1,14 +1,20 @@
 ﻿---
-ID: "b31fa3a2-8670-4d01-9514-234cf3c8eaec"
+ID: "dc9101a0-af34-45f0-90e7-34c4d520473a"
 Parent: "7a401a5d-a2f4-4e56-8b20-cb12a04ddbaa"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Feature/Weather/WeatherWidget
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/form_blue.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
   Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{13FCC2B2-52B6-4AC5-9B01-8A160DBA6E15}"
 Languages:
 - Language: en
   Versions:
@@ -16,4 +22,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170304T062702Z
+      Value: 20170304T073309Z

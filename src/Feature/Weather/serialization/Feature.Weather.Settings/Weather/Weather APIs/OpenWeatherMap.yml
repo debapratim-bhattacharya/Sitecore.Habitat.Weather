@@ -25,7 +25,7 @@ Languages:
       Hint: SearchByGeoIpRelativeUrl
       Value: "?lat={{lat}}&lon={{lon}}&appid={{appId}}&units={{metric}}"
     - ID: "bd74938e-1257-473c-9515-e4af64039a95"
-      Hint: AppBaseUrl
+      Hint: AppWeatherBaseUrl
       Value: "http://api.openweathermap.org/data/2.5/weather"
     - ID: "d8cd5714-0aa3-4e04-ae2d-f4242bda0858"
       Hint: SearchByDestinationRelativeUrl

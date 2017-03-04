@@ -1,0 +1,19 @@
+﻿---
+ID: "627d0443-44e0-40eb-adb6-6bb17cbf869d"
+Parent: "0403cae1-42f3-42b5-bc51-06f8bbeee630"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Habitat/Global/Weather/Weather widgets
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{DC9101A0-AF34-45F0-90E7-34C4D520473A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170304T103700Z
