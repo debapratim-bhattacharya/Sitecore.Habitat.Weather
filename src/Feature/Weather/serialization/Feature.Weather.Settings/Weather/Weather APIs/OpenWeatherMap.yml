@@ -18,6 +18,9 @@ Languages:
     - ID: "3ec5c3e6-b242-4963-998f-5490e4eac07c"
       Hint: AppId
       Value: 95fea370fea973f538d68ad88ec5e9cd
+    - ID: "5d540ade-b88f-48cc-ad46-8921ba269657"
+      Hint: IpToLocationApi
+      Value: "http://ip-api.com/json/"
     - ID: "a65708c5-da89-4db1-9119-903449224292"
       Hint: TemperatureUnit
       Value: "{E461FF71-0503-4C8D-AEF2-C4CEF25E2BBE}"
