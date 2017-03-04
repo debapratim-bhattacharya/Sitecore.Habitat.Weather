@@ -3,9 +3,6 @@ using Sitecore.Mvc.Presentation;
 using Sitecore.Mvc.Controllers;
 using Sitecore.Data.Items;
 using Sitecore.Data;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
 using Sitecore.Data.Fields;
 using System.Net;
 using Sitecore.Feature.Weather.Models;
@@ -16,8 +13,6 @@ namespace Sitecore.Feature.Weather.Controllers
 {
     public class WeatherWidgetController : SitecoreController
     {
-        static HttpClient httpClient = new HttpClient();
-        
         private Item GetDatasourceItem()
         {
             var datasourceId = RenderingContext.Current.Rendering.DataSource;
@@ -26,16 +21,14 @@ namespace Sitecore.Feature.Weather.Controllers
 
         private string GetGeoLocation(string locationApi)
         {
-            string userIP = HttpContext.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
-            if (string.IsNullOrEmpty(userIP))
+            string userIp = HttpContext.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+            if (string.IsNullOrEmpty(userIp))
             {
-                userIP = HttpContext.Request.ServerVariables["REMOTE_ADDR"];
+                userIp = HttpContext.Request.ServerVariables["REMOTE_ADDR"];
             }
-            string url = locationApi + "//" + userIP.ToString();
-            WebClient client = new WebClient();
-            string jsonstring = client.DownloadString(url);
-            dynamic dynObj = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonstring);
-            return dynObj.city + "," + dynObj.country_code;
+
+            ILocationRepository locationRepository = new LocationRepository();
+            return locationRepository.GetLocationFromIp(userIp, locationApi);
 
         }
 
@@ -64,9 +57,9 @@ namespace Sitecore.Feature.Weather.Controllers
                 Unit = temparatureUnit
             };
 
-            var weatherServiceRepository = new WeatherRepository();
+            IWeatherRepository weatherServiceRepository = new WeatherRepository();
 
-            var weatherInfoString = ((IWeatherRepository)weatherServiceRepository).GetWeatherByCity(request);
+            var weatherInfoString = weatherServiceRepository.GetWeatherByCity(request);
             weatherInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherInfo>(weatherInfoString);
             return View("WeatherWidget", weatherInfo);
         }

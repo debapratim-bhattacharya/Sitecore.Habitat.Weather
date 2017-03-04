@@ -144,7 +144,9 @@
     <Compile Include="Controllers\WeatherWidgetController.cs" />
     <Compile Include="Models\CarouselRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ILocationRepository.cs" />
     <Compile Include="Repositories\IWeatherRepository.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
     <Compile Include="Repositories\WeatherRepository.cs" />
     <Compile Include="Scheduler\Agent\WeatherBasedNotifier.cs" />
     <Compile Include="Scheduler\Agent\WeatherForecast.cs" />
