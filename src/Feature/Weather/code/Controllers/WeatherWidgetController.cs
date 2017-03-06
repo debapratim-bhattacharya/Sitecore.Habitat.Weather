@@ -35,7 +35,7 @@ namespace Sitecore.Feature.Weather.Controllers
         public ActionResult CityWeatherList()
         {
             var currentItem = GetDatasourceItem();
-            var weatherInfo = new WeatherInfo() ;
+            var weatherInfo = new WeatherCurrent() ;
             if (currentItem == null) return View("WeatherWidget", weatherInfo);
             var locationApi = @"http://ip-api.com/json/";//currentItem.Fields["LocationApi"].Value;
 
@@ -60,7 +60,7 @@ namespace Sitecore.Feature.Weather.Controllers
             IWeatherRepository weatherServiceRepository = new WeatherRepository();
 
             var weatherInfoString = weatherServiceRepository.GetWeatherByCity(request);
-            weatherInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherInfo>(weatherInfoString);
+            weatherInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherCurrent>(weatherInfoString);
             return View("WeatherWidget", weatherInfo);
         }
 

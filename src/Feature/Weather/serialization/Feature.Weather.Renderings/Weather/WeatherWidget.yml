@@ -1,31 +1,13 @@
 ﻿---
 ID: "a4b61d61-3654-43fb-b022-f4a95d71315e"
 Parent: "048e26a3-72d0-45ad-956c-579d62d370f8"
-Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
 Path: /sitecore/layout/Renderings/Feature/Weather/WeatherWidget
 DB: master
 SharedFields:
-- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
-  Hint: Datasource Template
-  Value: /sitecore/templates/Feature/Weather/WeatherWidget
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /Views/Weather/WeatherWidget.cshtml
-- ID: "5a14936f-2100-4541-b700-2f122e88f3f8"
-  Hint: Data source
-  Value: 
-- ID: "94069f66-609c-48b0-8281-521c30fb269d"
-  Hint: Open Properties after Add
-  Value: 
-- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
-  Hint: Datasource Location
-  Value: /sitecore/content/Habitat/Global/Weather/Weather widgets/OpenWeatherWidget
-- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
-  Hint: Controller Action
-  Value: CityWeatherList
-- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
-  Hint: Controller
-  Value: WeatherWidget
 - ID: "ef7c5528-7307-4e19-863b-da19eed6a9ed"
   Hint: Open Properties after Add
   Value: "-"

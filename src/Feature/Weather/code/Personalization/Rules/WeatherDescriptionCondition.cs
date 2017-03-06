@@ -18,6 +18,8 @@ namespace Sitecore.Feature.Weather.Personalization.Rules
     {
         public Item SpecifiedValue { get; set; }
 
+        public Item Value { get; set; }
+
         private const string OpenWeatherMapConfigurationItemId = "A0DBDE20-5088-4CD2-A823-659075C6B8EE";
 
         private Item _dataSourceItem;
@@ -51,11 +53,14 @@ namespace Sitecore.Feature.Weather.Personalization.Rules
 
         protected override bool Execute(T ruleContext)
         {
-            string userIp = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+            var userIp = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
             if (string.IsNullOrEmpty(userIp))
             {
                 userIp = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
             }
+
+            if (string.IsNullOrWhiteSpace(userIp))
+                userIp = "Hyderabad, India";
 
             var location = ((ILocationRepository) new LocationRepository())
                 .GetLocationFromIp(userIp, GetLocationApi());
@@ -72,37 +77,37 @@ namespace Sitecore.Feature.Weather.Personalization.Rules
             IWeatherRepository weatherServiceRepository = new WeatherRepository();
 
             var weatherInfoString = weatherServiceRepository.GetWeatherByCity(request);
-            var weatherInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherInfo>(weatherInfoString);
+            var weatherCurrent = Newtonsoft.Json.JsonConvert.DeserializeObject<WeatherCurrent>(weatherInfoString);
 
             switch (this.GetOperator())
             {
                 case StringConditionOperator.Unknown:
                     return false;
                 case StringConditionOperator.Equals:
-                    return CompareWithSpecifiedValue(weatherInfo);
+                    return SpecifiedValue.Fields["Name"].Value
+                        .Equals(weatherCurrent.weather.description);
                 case StringConditionOperator.CaseInsensitivelyEquals:
-                    return CompareWithSpecifiedValue(weatherInfo);
+                    return SpecifiedValue.Fields["Name"].Value.ToLowerInvariant()
+                        .Equals(weatherCurrent.weather.description.ToLowerInvariant());
                 case StringConditionOperator.NotEqual:
-                    return false;
+                    return !SpecifiedValue.Fields["Name"].Value
+                        .Equals(weatherCurrent.weather.description); 
                 case StringConditionOperator.NotCaseInsensitivelyEquals:
-                    return CompareWithSpecifiedValue(weatherInfo);
+                    return SpecifiedValue.Fields["Name"].Value
+                        .Equals(weatherCurrent.weather.description); 
                 case StringConditionOperator.Contains:
-                    return false;
-                case StringConditionOperator.MatchesRegularExpression:
-                    return false;
+                    return SpecifiedValue.Fields["Name"].Value
+                        .Contains(weatherCurrent.weather.description);
                 case StringConditionOperator.StartsWith:
-                    return false;
+                    return SpecifiedValue.Fields["Name"].Value
+                        .StartsWith(weatherCurrent.weather.description);
                 case StringConditionOperator.EndsWith:
-                    return false;
+                    return SpecifiedValue.Fields["Name"].Value
+                        .EndsWith(weatherCurrent.weather.description);
                 default:
                     throw new ArgumentOutOfRangeException();
             }
         }
 
-        private bool CompareWithSpecifiedValue(WeatherInfo weatherInfo)
-        {
-            return SpecifiedValue.Fields["Name"].Value.ToLowerInvariant()
-                        .Equals(weatherInfo.list.FirstOrDefault()?.weather.FirstOrDefault()?.description.ToLowerInvariant());
-        }
     }
 }
